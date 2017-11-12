@@ -17,7 +17,7 @@ public class Practice7Test {
 		String val = "push";
 		boolean success = false;
 		
-		Hashtable hashtable = new Hashtable();
+		Hashtable<String, String> hashtable = new Hashtable<String, String>();
 		
 		try {
 			hashtable.put(key, val);
@@ -36,7 +36,7 @@ public class Practice7Test {
 		String key = "American Terrorist";
 		boolean success = false;
 		
-		Hashtable hashtable = new Hashtable();
+		Hashtable<String, String> hashtable = new Hashtable<String, String>();
 		
 		try {
 			if (! hashtable.containsKey(key)) {
@@ -59,7 +59,7 @@ public class Practice7Test {
 		String val = "I dream of you amid the flowers";
 		boolean success = false;
 		
-		Hashtable hashtable = new Hashtable();
+		Hashtable<String, String> hashtable = new Hashtable<String, String>();
 		
 		try {
 			hashtable.put(key, val);
@@ -81,7 +81,7 @@ public class Practice7Test {
 		String key = "food for thought";
 		boolean success = false;
 		
-		Hashtable hashtable = new Hashtable();
+		Hashtable<String, String> hashtable = new Hashtable<String, String>();
 		
 		try {
 			if (! hashtable.containsKey(key)) {
@@ -101,7 +101,7 @@ public class Practice7Test {
 	
 	
 	public long timingTest() {
-		File file = new File("/usr/share/dict/web2");
+		File file = new File("web2");
 		BufferedReader reader = null;
 		ArrayList<String> lookingFor = new ArrayList<String>();
 		Random random = new Random();
@@ -109,7 +109,7 @@ public class Practice7Test {
 		long start = 0;
 		long end = 0;
 		
-		Hashtable hashtable = new Hashtable();
+		Hashtable<String, String> hashtable = new Hashtable<String, String>();
 		
 		try {
 		    reader = new BufferedReader(new FileReader(file));
